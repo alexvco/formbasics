@@ -1,59 +1,74 @@
-<form id="new_search" class="new_search" action="/listings" accept-charset="UTF-8" method="get">
-  <!-- hidden input -->
-  <input type="hidden" id="custId" name="custId" value="3487">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" ="viewport" content="ie=edge">
+    <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
+    <script src="javascript.js"></script>
+    <title>Javascript</title>
+  </head>
 
-  <!-- basic input -->
-  <div class="form-group col-lg-3 col-md-2 col-sm-2">
-    <input type="text" name="mls_num" id="mls_num" class="form-control" placeholder="MLS #: RX-10300347">
-  </div>
+  <body>
+    <form id="new_search" class="new_search" action="/listings" accept-charset="UTF-8" method="get">
+      <!-- hidden input -->
+      <input type="hidden" id="custId" name="custId" value="3487">
 
-  <!-- select field -->
-  <div class="form-group col-lg-3 col-md-2 col-sm-2">
-    <select class="form-control" name="list_type" id="list_type">
-      <option selected="selected" value="Sale">For Sale</option>
-      <option value="Rental">For Rent</option>
-      <option value="Lot">Vacant Lot</option>
-    </select>
-  </div>
-  
-  <!-- input file field -->
-  <div class="form-group col-lg-2 col-md-2 col-sm-2">
-    <label for="avatar">Choose a profile picture:</label>
-    <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
-    <br>
-    <!-- multiple files -->
-    <br>
-    <label for="files">Select files:</label>
-    <input type="file" id="files" name="files" accept="image/png, image/jpeg" multiple>
-  </div>
+      <!-- basic input -->
+      <div class="form-group col-lg-3 col-md-2 col-sm-2">
+        <input type="text" name="mls_num" id="mls_num" class="form-control" placeholder="MLS #: RX-10300347">
+      </div>
 
-  <!-- radio button field -->
-  <div class="form-group col-lg-2 col-md-2 col-sm-2">
-    <p>Select gender:</p>
-    <div>
-      <input type="radio" id="male" name="gender" value="male" checked>
-      <label for="male">Male</label>
-    </div>
-    <div>
-      <input type="radio" id="female" name="gender" value="female">
-      <label for="female">Female</label>
-    </div>
-  </div>
+      <!-- select field -->
+      <div class="form-group col-lg-3 col-md-2 col-sm-2">
+        <select class="form-control" name="list_type" id="list_type">
+          <option selected="selected" value="Sale">For Sale</option>
+          <option value="Rental">For Rent</option>
+          <option value="Lot">Vacant Lot</option>
+        </select>
+      </div>
 
-  <!-- checkbox field -->
-  <div class="form-group col-lg-2 col-md-2 col-sm-2">
-    <input type="checkbox" name="furnished" id="furnished">
-    <label for="furnished">Furnished</label>
-  </div>
+      <!-- input file field -->
+      <div class="form-group col-lg-2 col-md-2 col-sm-2">
+        <label for="avatar">Choose a profile picture:</label>
+        <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+        <br>
+        <!-- multiple files -->
+        <br>
+        <label for="files">Select files:</label>
+        <input type="file" id="files" name="files" accept="image/png, image/jpeg" multiple>
+      </div>
 
-  <!-- textarea field -->
-  <div class="form-group col-lg-2 col-md-2 col-sm-2">
-    <textarea name="comment" id="comment" rows="10" cols="30" placeholder="Describe yourself here...">If there is a value here, placeholder text will not show</textarea>
-  </div>
+      <!-- radio button field -->
+      <div class="form-group col-lg-2 col-md-2 col-sm-2">
+        <p>Select gender:</p>
+        <div>
+          <input type="radio" id="male" name="gender" value="male" checked>
+          <label for="male">Male</label>
+        </div>
+        <div>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label>
+        </div>
+      </div>
 
-  <!-- submit input -->
-  <div class="actions pull-right col-lg-4 mb30">
-    <input type="submit" value="Search" id="search_button" class="btn btn-gray col-lg-5 pull-right" data-disable-with="Search"> 
-    <!-- <button name="button" id="reset_button" onclick="location.href='http://www.example.com/listings';" class="btn btn-gray col-lg-5 pull-right">Reset</button> -->
-  </div>
-</form>
+      <!-- checkbox field -->
+      <div class="form-group col-lg-2 col-md-2 col-sm-2">
+        <input type="checkbox" name="furnished" id="furnished">
+        <label for="furnished">Furnished</label>
+      </div>
+
+      <!-- textarea field -->
+      <div class="form-group col-lg-2 col-md-2 col-sm-2">
+        <textarea name="comment" id="comment" rows="10" cols="30" placeholder="Describe yourself here...">If there is a value here, placeholder text will not show</textarea>
+      </div>
+
+      <!-- submit input -->
+      <div class="actions pull-right col-lg-4 mb30">
+        <input type="submit" value="Search" id="search_button" class="btn btn-gray col-lg-5 pull-right" data-disable-with="Search"> 
+        <!-- <button name="button" id="reset_button" onclick="location.href='http://www.example.com/listings';" class="btn btn-gray col-lg-5 pull-right">Reset</button> -->
+      </div>
+    </form>
+  </body>
+</html>
+
