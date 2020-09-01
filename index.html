@@ -1,0 +1,48 @@
+<form id="new_search" class="new_search" action="/listings" accept-charset="UTF-8" method="get">
+  <!-- hidden input -->
+  <input type="hidden" id="custId" name="custId" value="3487">
+
+  <!-- basic input -->
+  <div class="form-group col-lg-3 col-md-2 col-sm-2">
+    <input type="text" name="mls_num" id="mls_num" class="form-control" placeholder="MLS #: RX-10300347">
+  </div>
+
+  <!-- select field -->
+  <div class="form-group col-lg-3 col-md-2 col-sm-2">
+    <select class="form-control" name="list_type" id="list_type">
+      <option selected="selected" value="Sale">For Sale</option>
+      <option value="Rental">For Rent</option>
+      <option value="Lot">Vacant Lot</option>
+    </select>
+  </div>
+
+  <!-- radio button field -->
+  <div class="form-group col-lg-2 col-md-2 col-sm-2">
+    <p>Select gender:</p>
+    <div>
+      <input type="radio" id="male" name="gender" value="male" checked>
+      <label for="male">Male</label>
+    </div>
+    <div>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+    </div>
+  </div>
+
+  <!-- checkbox field -->
+  <div class="form-group col-lg-2 col-md-2 col-sm-2">
+    <input type="checkbox" name="furnished" id="furnished">
+    <label for="furnished">Furnished</label>
+  </div>
+
+  <!-- textarea field -->
+  <div class="form-group col-lg-2 col-md-2 col-sm-2">
+    <textarea name="comment" id="comment" rows="10" cols="30" placeholder="Describe yourself here...">If there is a value here, placeholder text will not show</textarea>
+  </div>
+
+  <!-- submit input -->
+  <div class="actions pull-right col-lg-4 mb30">
+    <input type="submit" value="Search" id="search_button" class="btn btn-gray col-lg-5 pull-right" data-disable-with="Search"> 
+    <!-- <button name="button" id="reset_button" onclick="location.href='http://www.example.com/listings';" class="btn btn-gray col-lg-5 pull-right">Reset</button> -->
+  </div>
+</form>
